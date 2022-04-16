@@ -1,39 +1,23 @@
-# Foundry template
+# StakingVault
 
-This is a template for a Foundry project.
+StakingVault is a voting-escrow staking rewards system, built using an [EIP-4626 tokenized vault](https://eips.ethereum.org/EIPS/eip-4626).
 
-## Installation
+## Features
 
-To install with [DappTools](https://github.com/dapphub/dapptools):
+- Staking rewards and voting power, which increase linearly as the staker's lock-up time increases - similar to [Curve's](https://twitter.com/CurveFinance) voting-escrow mechanism in veCRV.
 
-```
-dapp install [user]/[repo]
-```
+- `StakingVault.sol` represents the default system, in which vault shares are *not* transferrable.
 
-To install with [Foundry](https://github.com/gakonst/foundry):
+- `StakingVaultTransferrable.sol` represents the variant of the StakingVault system, in which vault shares *are* transferrable.
 
-```
-forge install [user]/[repo]
-```
+- Rewards accrue in a single underlying ERC-20 token - the same token which must be deposited to create a staked position.
 
-## Local development
+- StakingVault is built using [Foundry](https://github.com/gakonst/foundry).
 
-This project uses [Foundry](https://github.com/gakonst/foundry) as the development framework.
 
-### Dependencies
+## Boilerplate
 
-```
-make update
-```
+This repo was started using [ZeframLou](https://github.com/ZeframLou)'s [Foundry template](https://github.com/ZeframLou/foundry-template).
 
-### Compilation
 
-```
-make build
-```
-
-### Testing
-
-```
-make test
-```
+## [Work In Progress]
